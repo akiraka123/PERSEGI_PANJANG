@@ -5,8 +5,8 @@ void persegipanjang::printhasil(){
 
     std::cout << "\ntitik tengah x      : " << (this->xmax + this->xmin)/2 + this->xmin;
     std::cout << "\ntitik tengah y      : " << (this->ymax + this->ymin)/2 + this->ymin;
-    std::cout << "\npanjang (x)         : " << this->xmax + this->xmin; 
-    std::cout << "\nlebar (y)           : " << this->ymin + this->ymax;
+    std::cout << "\npanjang (x)         : " << this->xmax - this->xmin; 
+    std::cout << "\nlebar (y)           : " << this->ymin - this->ymax;
     std::cout << "\nnilai xmin          : " << this->xmin;
     std::cout << "\nnilai xmax          : " << this->xmax;
     std::cout << "\nnilai ymin          : " << this->ymin;
@@ -66,10 +66,10 @@ persegipanjang persegipanjang::operator-(persegipanjang const &baru){
 //operator ++ membuat luasan menjadi 2 kali luasan semula
 void persegipanjang::operator++(){
 
-    float panjang = 0,lebar = 0,t_x = 0, t_y = 0;
+float panjang = 0,lebar = 0,t_x = 0, t_y = 0;
 
-   panjang  = this->xmax + this->xmin;
-   lebar    = this->ymin + this->ymax;
+   panjang  = this->xmax - this->xmin;
+   lebar    = this->ymin - this->ymax;
     t_x     = panjang/2 + this->xmin;
     t_y     = lebar/2 + this->ymin;
 
@@ -88,8 +88,8 @@ void persegipanjang::operator--(){
     
     float panjang = 0,lebar = 0,t_x = 0, t_y = 0;
 
-   panjang  = this->xmax + this->xmin;
-   lebar    = this->ymin + this->ymax;
+   panjang  = this->xmax - this->xmin;
+   lebar    = this->ymin - this->ymax;
     t_x     = panjang/2 + this->xmin;
     t_y     = lebar/2 + this->ymin;
 
