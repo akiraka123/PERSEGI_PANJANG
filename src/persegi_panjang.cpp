@@ -1,25 +1,30 @@
 #include <iostream>
+#include <cmath>
 #include "include/persegi_panjang.hpp"
 
 void persegipanjang::printhasil(){
 
-    std::cout << "\ntitik tengah x      : " << (this->xmax + this->xmin)/2 + this->xmin;
-    std::cout << "\ntitik tengah y      : " << (this->ymax + this->ymin)/2 + this->ymin;
-    std::cout << "\npanjang (x)         : " << this->xmax - this->xmin; 
-    std::cout << "\nlebar (y)           : " << this->ymin - this->ymax;
+float panjang = this->xmax - this->xmin;
+float lebar   = this->ymax - this->ymin;
+panjang = abs(panjang);
+lebar   = abs (lebar);
+    std::cout << "\ntitik tengah x      : " << (this->xmax - this->xmin)/2 + this->xmin;
+    std::cout << "\ntitik tengah y      : " << (this->ymax - this->ymin)/2 + this->ymin;
+    std::cout << "\npanjang (x)         : " << panjang; 
+    std::cout << "\nlebar (y)           : " << lebar;
     std::cout << "\nnilai xmin          : " << this->xmin;
     std::cout << "\nnilai xmax          : " << this->xmax;
     std::cout << "\nnilai ymin          : " << this->ymin;
     std::cout << "\nnilai ymax          : " << this->ymax;
+    std::cout << "\n\n";
 }
-
+persegipanjang::persegipanjang(){}
 persegipanjang::persegipanjang(float tengah_x,float tengah_y, float panjang, float lebar) {
     
     this->xmin = tengah_x - (panjang/2);
     this->ymin = tengah_y - (lebar/2);
     this->xmax = tengah_x + (panjang/2);
     this->ymax = tengah_y + (lebar/2);
-
 }
 //untuk mengetahui apakah kedua persegi panjang beririsan atau tidak
 bool persegipanjang::operator==(persegipanjang const &baru)const {
@@ -68,8 +73,10 @@ void persegipanjang::operator++(){
 
 float panjang = 0,lebar = 0,t_x = 0, t_y = 0;
 
-   panjang  = this->xmax - this->xmin;
-   lebar    = this->ymin - this->ymax;
+    panjang  = (this->xmax - this->xmin);
+    lebar    = (this->ymin - this->ymax);
+    panjang = abs(panjang);
+    lebar   = abs (lebar);
     t_x     = panjang/2 + this->xmin;
     t_y     = lebar/2 + this->ymin;
 
@@ -88,8 +95,10 @@ void persegipanjang::operator--(){
     
     float panjang = 0,lebar = 0,t_x = 0, t_y = 0;
 
-   panjang  = this->xmax - this->xmin;
-   lebar    = this->ymin - this->ymax;
+    panjang  = (this->xmax - this->xmin);
+    lebar    = (this->ymin - this->ymax);
+    panjang = abs(panjang);
+    lebar   = abs (lebar);
     t_x     = panjang/2 + this->xmin;
     t_y     = lebar/2 + this->ymin;
 
@@ -102,6 +111,8 @@ void persegipanjang::operator--(){
     this->ymax = t_y + (lebar/2);
 }
 
+void persegipanjang::operator ++ (int){}
+void persegipanjang::operator -- (int){}
 //mengambil nilai salah satu properti kelas
 float persegipanjang::operator[](int index){
 
