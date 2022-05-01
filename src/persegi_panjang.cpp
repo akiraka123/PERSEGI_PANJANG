@@ -19,6 +19,8 @@ lebar   = abs (lebar);
     std::cout << "\n\n";
 }
 persegipanjang::persegipanjang(){}
+
+//Mencari Xmin,Xmax dan Ymin,Ymax
 persegipanjang::persegipanjang(float tengah_x,float tengah_y, float panjang, float lebar) {
     
     this->xmin = tengah_x - (panjang/2);

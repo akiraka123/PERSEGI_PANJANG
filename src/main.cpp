@@ -8,7 +8,7 @@ using namespace std;
 // Departemen : Teknik Komputer
 
 
-void pressstart(){
+void pressenter(){
     cout << "TEKAN ENTER UNTUK MELANJUTKAN PROGRAM";
     cin.ignore();
     system("CLS||CLEAR");
@@ -34,7 +34,7 @@ cout<<"Titik tengah X   : ";cin>>tx;
 cout<<"Titik tengah Y   : ";cin>>ty;
 persegipanjang p2(tx,ty,panjang,lebar);
 
-pressstart();
+pressenter();
 //persegipanjang p1(1,2,3,4),p2(2,1,4,4);
 persegipanjang p3;
 
@@ -44,7 +44,7 @@ p1.printhasil();
 cout << "\npersegi panjang 2 : \n";
 p2.printhasil();
 
-pressstart();
+pressenter();
 
 // menggunakan Operator +
 cout << "persegi panjang 1 : \n";
@@ -55,7 +55,7 @@ cout <<"Nilai hasil penjumlahan antara p1 dan p2 :\n";
 p3 = p1 + p2;
 if (p1==p2) p3.printhasil();
 
-pressstart();
+pressenter();
 
 // menggunakan Operator -
 cout << "persegi panjang 1 : \n";
@@ -66,7 +66,7 @@ cout << "Nilai hasil pengurangan antara p1 dan p2 :\n";
 p3 = p1 - p2;
 if (p1==p2) p3.printhasil();
 
-pressstart();
+pressenter();
 
 // menggunakan Operator ++
 cout << "persegi panjang 1 : \n";
@@ -76,7 +76,7 @@ cout << "persegi panjang 1 setelah dilakukan operator ++ : \n";
 p1.printhasil();
 --p1;
 
-pressstart();
+pressenter();
 
 // menggunakan Operator --
 cout << "persegi panjang 2 : \n";
@@ -86,7 +86,7 @@ cout << "persegi panjang 2 setelah dilakukan operator -- : \n";
 p2.printhasil();
 ++p2;
 
-pressstart();
+pressenter();
 
 // menggunakan Operator [] (membandingkan nilai xmin 1 dengan xmin 2)
 
@@ -96,7 +96,7 @@ if (p1[1]>p2[1]) cout<< "\n\nnilai x min 1 lebih besar daripada x min 2\n\n";
 else if (p2[1]>p1[1]) cout<< "\n\nnilai x min 2 lebih besar daripada x min 1\n\n";
 else cout<< "\n\nnilai x min 1 dan x min 2 sama\n\n";
 
-pressstart();
+pressenter();
 
 // menggunakan Operator == (membuktikan bahwa p1 dan p2 beririsan)
 cout << "persegi panjang 1 : \n";
@@ -106,7 +106,7 @@ p2.printhasil();
 
 if (p1==p2) cout<< "Kedua Persegi panjang saling beririsan\n\n";
 else cout<< "Kedua Persegi panjang tidak saling beririsan\n\n";
-pressstart();
+pressenter();
 
 cout<< "PROGRAM SELESAI TERIMAKASIH";
 cin.ignore();
