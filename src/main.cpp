@@ -9,7 +9,7 @@ using namespace std;
 
 
 void pressstart(){
-    cout << "TEKAN START UNTUK MELANJUTKAN PROGRAM";
+    cout << "TEKAN ENTER UNTUK MELANJUTKAN PROGRAM";
     cin.ignore();
     system("CLS||CLEAR");
 }
@@ -17,9 +17,25 @@ void pressstart(){
 int main(){
 
 system("CLS||CLEAR");
-cout<< " OPERATOR OVERLOADING PERSEGI PANJANG By Akiraka\n";
+cout<< " OPERATOR OVERLOADING PERSEGI PANJANG By Akiraka\n\n";
+float panjang,lebar,tx,ty;
+cout<<"Masukkan persegi panjang 1 : \n\n";
+cout<<"Panjang          : ";cin>>panjang;
+cout<<"Lebar            : ";cin>>lebar;
+cout<<"Titik tengah X   : ";cin>>tx;
+cout<<"Titik tengah Y   : ";cin>>ty;
+persegipanjang p1(tx,ty,panjang,lebar);
 
-persegipanjang p1(1,2,3,4),p2(2,1,4,4);
+system("CLS||CLEAR");
+cout<<"Masukkan persegi panjang 2 : \n\n";
+cout<<"Panjang          : ";cin>>panjang;
+cout<<"Lebar            : ";cin>>lebar;
+cout<<"Titik tengah X   : ";cin>>tx;
+cout<<"Titik tengah Y   : ";cin>>ty;
+persegipanjang p2(tx,ty,panjang,lebar);
+
+pressstart();
+//persegipanjang p1(1,2,3,4),p2(2,1,4,4);
 persegipanjang p3;
 
 //melihat nilai mula mula persegipanjang 1 dan 2
