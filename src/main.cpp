@@ -80,7 +80,7 @@ pressenter();
 
 // menggunakan Operator --
 cout << "persegi panjang 2 : \n";
-p2.printhasil();\
+p2.printhasil();
 --p2;
 cout << "persegi panjang 2 setelah dilakukan operator -- : \n";
 p2.printhasil();
