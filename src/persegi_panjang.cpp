@@ -48,7 +48,7 @@ persegipanjang persegipanjang::operator+(persegipanjang const &baru){
         temp.xmax = std::max(this-> xmax,baru.xmax);
         temp.ymax = std::max(this-> ymax,baru.ymax);
 
-    }else std::cout<<"kedua persegi panjang tidak beririsan";
+    }else std::cout<<"kedua persegi panjang tidak beririsan tidak dapat dilakukan operasi pertambahan \n";
 
         return temp;
 }
@@ -65,8 +65,7 @@ persegipanjang persegipanjang::operator-(persegipanjang const &baru){
         temp.xmax = std::min(this-> xmax,baru.xmax);
         temp.ymax = std::min(this-> ymax,baru.ymax);
         
-        return temp;
-    }
+    }else std::cout<<"kedua persegi panjang tidak beririsan tidak dapat dilakukan operasi pengurangan \n";
        return temp; 
 }
 

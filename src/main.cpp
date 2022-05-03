@@ -51,9 +51,12 @@ cout << "persegi panjang 1 : \n";
 p1.printhasil();
 cout << "\npersegi panjang 2 : \n";
 p2.printhasil();
-cout <<"Nilai hasil penjumlahan antara p1 dan p2 :\n";
+
 p3 = p1 + p2;
-if (p1==p2) p3.printhasil();
+if (p1==p2) {
+    cout <<"Nilai hasil penjumlahan antara p1 dan p2 :\n";
+    p3.printhasil();
+} 
 
 pressenter();
 
@@ -62,9 +65,12 @@ cout << "persegi panjang 1 : \n";
 p1.printhasil();
 cout << "\npersegi panjang 2 : \n";
 p2.printhasil();
-cout << "Nilai hasil pengurangan antara p1 dan p2 :\n";
+
 p3 = p1 - p2;
-if (p1==p2) p3.printhasil();
+if (p1==p2) {
+    cout << "Nilai hasil pengurangan antara p1 dan p2 :\n";
+    p3.printhasil();
+}
 
 pressenter();
 
