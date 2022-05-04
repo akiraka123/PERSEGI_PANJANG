@@ -2,6 +2,12 @@
 #include <cmath>
 #include "include/persegi_panjang.hpp"
 
+void press::pressenter(){
+    std::cout << "TEKAN ENTER UNTUK MELANJUTKAN PROGRAM";
+    std::cin.ignore();
+    system("CLS||CLEAR");
+}
+
 void persegipanjang::printhasil(){
 
 float panjang = this->xmax - this->xmin;

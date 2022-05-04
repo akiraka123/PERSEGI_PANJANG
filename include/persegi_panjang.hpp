@@ -2,7 +2,11 @@
 #define __PERSEGI_PANJANG_HPP__
 #include <iostream>
 
+namespace press{
 
+void pressenter();
+
+}
 class persegipanjang{
 
 private : 
@@ -11,14 +15,15 @@ private :
 public  : 
     persegipanjang();
     persegipanjang(float tengah_x, float tengah_y, float panjang, float lebar);
-    bool operator== (persegipanjang const &) const;
     persegipanjang operator+ (persegipanjang const &);
     persegipanjang operator- (persegipanjang const &);
     void operator ++ ();
-    void operator -- ();
     void operator ++ (int);
+    void operator -- ();
     void operator -- (int);
     float operator[](int index);
+    bool operator== (persegipanjang const &) const;
+
     void printhasil ();
     
 };
