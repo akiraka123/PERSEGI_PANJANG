@@ -3,4 +3,4 @@
 MAKE BY MOCHAMAD AKIRAKA HARIFANDA                                    
 ====================================
 
-TUGAS MEMBUAT SIAKAD.
+TUGAS MEMBUAT PERSEGI PANJANG(OPERATOR OVERLOADING).
