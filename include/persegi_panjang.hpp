@@ -1,6 +1,6 @@
 #ifndef __PERSEGI_PANJANG_HPP__
 #define __PERSEGI_PANJANG_HPP__
-#include <iostream>
+
 
 namespace press{
 

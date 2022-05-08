@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+
 #include "include/persegi_panjang.hpp"
 
 void press::pressenter(){
@@ -12,8 +12,6 @@ void persegipanjang::printhasil(){
 
 float panjang = this->xmax - this->xmin;
 float lebar   = this->ymax - this->ymin;
-panjang = abs(panjang);
-lebar   = abs (lebar);
     std::cout << "\ntitik tengah x      : " << panjang/2 + this->xmin;
     std::cout << "\ntitik tengah y      : " << lebar/2 + this->ymin;
     std::cout << "\npanjang (x)         : " << panjang; 
@@ -81,9 +79,7 @@ void persegipanjang::operator++(){
 float panjang = 0,lebar = 0,t_x = 0, t_y = 0;
 
     panjang  = (this->xmax - this->xmin);
-    lebar    = (this->ymin - this->ymax);
-    panjang = abs(panjang);
-    lebar   = abs (lebar);
+    lebar    = (this->ymax - this->ymin);
     t_x     = panjang/2 + this->xmin;
     t_y     = lebar/2 + this->ymin;
 
@@ -103,9 +99,7 @@ void persegipanjang::operator--(){
     float panjang = 0,lebar = 0,t_x = 0, t_y = 0;
 
     panjang  = (this->xmax - this->xmin);
-    lebar    = (this->ymin - this->ymax);
-    panjang = abs(panjang);
-    lebar   = abs (lebar);
+    lebar    = (this->ymax - this->ymin);
     t_x     = panjang/2 + this->xmin;
     t_y     = lebar/2 + this->ymin;
 
