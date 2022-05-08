@@ -76,10 +76,21 @@ p1.printhasil();
 cout << "persegi panjang 1 setelah dilakukan operator ++ : \n";
 p1.printhasil();
 --p1;
-
+cout << "persegi panjang 2 : \n";
+p2.printhasil();
+++p2;
+cout << "persegi panjang 2 setelah dilakukan operator ++ : \n";
+p2.printhasil();
+--p2;
 press::pressenter();
 
 // menggunakan Operator --
+cout << "persegi panjang 1 : \n";
+p1.printhasil();
+--p1;
+cout << "persegi panjang 1 setelah dilakukan operator -- : \n";
+p1.printhasil();
+++p1;
 cout << "persegi panjang 2 : \n";
 p2.printhasil();
 --p2;
